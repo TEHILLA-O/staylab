@@ -1,0 +1,22 @@
+[project]
+name = "staylab"
+version = "1.0.0"
+description = "StayLab — Airbnb A/B experiment analytics"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["analytics", "api", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = [
+    "integration: needs a running PostgreSQL with loaded StayLab data",
+]

@@ -1,0 +1,1 @@
+"""StayLab FastAPI application."""

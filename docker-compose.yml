@@ -1,0 +1,40 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: staylab-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-staylab}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-staylab}
+      POSTGRES_DB: ${POSTGRES_DB:-staylab}
+    ports:
+      - "${POSTGRES_PORT:-5434}:5432"
+    volumes:
+      - staylab_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-staylab} -d ${POSTGRES_DB:-staylab}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    container_name: staylab-api
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-staylab}:${POSTGRES_PASSWORD:-staylab}@db:5432/${POSTGRES_DB:-staylab}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      - ./database:/app/database:ro
+    profiles: ["full"]
+
+volumes:
+  staylab_pgdata:

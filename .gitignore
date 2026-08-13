@@ -1,0 +1,22 @@
+.env
+.env.local
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Raw Inside Airbnb snapshots are large; they are reproducible via `make data`.
+data/raw/**
+!data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+
+node_modules/
+.next/
+out/
+.vercel
+*.tsbuildinfo
+.DS_Store

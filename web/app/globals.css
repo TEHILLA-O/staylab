@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7f7f5;
+  --ink: #181818;
+  --mute: #70706c;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #f3e4de;
+  color: #181818;
+}
+
+.hairline {
+  height: 1px;
+  background: #e4e4df;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #70706c;
+}
+
+.num {
+  font-variant-numeric: tabular-nums lining-nums;
+}
