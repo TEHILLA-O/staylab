@@ -2,6 +2,8 @@
 
 Experimentation analytics for a redesigned booking experience.
 
+See [FAILURES.md](./FAILURES.md) for what can go wrong, what broke, how it was fixed, and results.
+
 StayLab is a portfolio system that looks like an internal experiment product: real marketplace data, a transparent simulated A/B layer, SQL-first metrics, statistical inference, a FastAPI service, and a Next.js readout.
 
 It answers one business question:
