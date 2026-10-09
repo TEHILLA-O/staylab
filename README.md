@@ -20,7 +20,7 @@ Comparing `instant_bookable = true` against `false` and calling it an A/B test w
 
 ## The experiment
 
-**EXP-024 — Simplified booking experience**
+**EXP-024: Simplified booking experience**
 
 | | Control A | Treatment B |
 | --- | --- | --- |

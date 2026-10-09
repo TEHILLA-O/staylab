@@ -1,4 +1,4 @@
-# Inside Airbnb London — columns used by StayLab
+# Inside Airbnb London: columns used by StayLab
 
 Snapshot: **19 June 2026**. Source files stay untouched under `data/raw/london/`.
 
