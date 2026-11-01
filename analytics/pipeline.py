@@ -41,7 +41,7 @@ def main() -> None:
     )
     if args.readout:
         log.info("printing readout", extra={"experiment": EXPERIMENT.experiment_key})
-        readout()
+        readout([])
 
 
 if __name__ == "__main__":

@@ -32,12 +32,12 @@ def _p(value: float) -> str:
     return f"{value:.2e}" if value < 1e-4 else f"{value:.4f}"
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Print the full experiment readout")
     parser.add_argument("--experiment-id", type=int, default=1)
     parser.add_argument("--segment", default="device",
                         choices=["device", "traffic_source", "neighbourhood", "room_type"])
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     # Windows consoles default to a legacy code page that mangles the pound
     # sign and any box-drawing characters.
