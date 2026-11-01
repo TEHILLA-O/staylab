@@ -16,7 +16,7 @@ separately and labelled as simulated.
 | `neighbourhood_cleansed` | Borough used for segmentation and relative price |
 | `latitude`, `longitude` | Marketplace geography (stored, not used in the test) |
 | `property_type` | Host-declared property type |
-| `room_type` | Entire home / private / hotel / shared — conversion covariate |
+| `room_type` | Entire home / private / hotel / shared, conversion covariate |
 | `accommodates` | Capacity; used for guests and price-per-person |
 | `bedrooms`, `beds` | Listing size |
 | `price` | Advertised nightly rate (string like `$164.00`) |
@@ -26,7 +26,7 @@ separately and labelled as simulated.
 | `reviews_per_month` | Demand proxy for listing exposure |
 | `review_scores_rating` | Quality signal (NULL if never reviewed) |
 | `review_scores_value`, `review_scores_location` | Stored for context |
-| `instant_bookable` | Marketplace attribute — **not** an experiment arm |
+| `instant_bookable` | Marketplace attribute, **not** an experiment arm |
 | `estimated_occupancy_l365d` | Occupancy context |
 | `last_review` | Recency of reviews |
 
@@ -44,7 +44,7 @@ Derived in ETL (not in the raw file):
 | --- | --- |
 | `listing_id` | Join key |
 | `date` | Forward night |
-| `available` | `t` / `f` — used for 180-day availability rate |
+| `available` | `t` / `f`: used for 180-day availability rate |
 | `minimum_nights` | Stay rule actually in force |
 
 The June 2026 snapshot does not publish a per-night `price` on the calendar.
