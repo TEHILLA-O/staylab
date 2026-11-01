@@ -94,7 +94,7 @@ def list_experiments(engine: Engine | None = None) -> list[dict[str, Any]]:
             COUNT(s.session_id)       AS sessions
         FROM experiments e
         LEFT JOIN experiment_users u    ON u.experiment_id = e.experiment_id
-        LEFT JOIN experiment_sessions s ON s.experiment_id = e.experiment_id
+        LEFT JOIN experiment_sessions s ON s.user_id = u.user_id
         GROUP BY e.experiment_id
         ORDER BY e.started_at DESC
         """,
