@@ -132,6 +132,18 @@ Results on 1 November 2026 (Python 3.12, Postgres 16 in Docker):
 
 Tests cover random assignment, one variant per user, uplift arithmetic, the z-test, the decision policy, API schemas and the SQL catalogue. There is no CI workflow in this repo, so none of this runs automatically.
 
+## Rigour checks
+
+[docs/RIGOUR.md](docs/RIGOUR.md) adds power planning, a daily sample ratio check with Holm correction, bootstrap intervals, CUPED, multiple testing correction across 40 segments, and an always valid sequential test, plus 600 full simulated reruns to measure error rates. Highlights from 24 November 2026:
+
+- Checking a normal z-test every day and stopping at the first p < 0.05 gave a 17.5% false positive rate in 200 A/A reruns, against 4.5% for a single look and 1.5% for the mSPRT.
+- 13 of 40 segment tests were significant before correction, 3 after Holm and 7 after Benjamini-Hochberg.
+- CUPED with pre-assignment covariates cut variance by only about 1%, because the simulator has no pre-period metric. This is reported as is.
+
+```bash
+python -m analytics.rigour_report --sims 200 --workers 2 --out reports/rigour
+```
+
 ## API
 
 | Method | Path | Purpose |

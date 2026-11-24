@@ -1,0 +1,148 @@
+{
+  "aa_no_effect": {
+    "simulations": 200,
+    "final_look_z_test": {
+      "rate": 0.045,
+      "count": 9,
+      "n": 200,
+      "approx_95_ci": [
+        0.016269114180032664,
+        0.07373088581996734
+      ]
+    },
+    "naive_peeking_14_daily_looks": {
+      "rate": 0.175,
+      "count": 35,
+      "n": 200,
+      "approx_95_ci": [
+        0.12233924611249852,
+        0.22766075388750145
+      ]
+    },
+    "always_valid_msprt": {
+      "rate": 0.015,
+      "count": 3,
+      "n": 200,
+      "approx_95_ci": [
+        0.0,
+        0.03184631116891766
+      ]
+    },
+    "cuped_test": {
+      "rate": 0.035,
+      "count": 7,
+      "n": 200,
+      "approx_95_ci": [
+        0.009529424820000632,
+        0.060470575179999375
+      ]
+    },
+    "raw_estimate_sd_across_sims": 0.0020022138436801376,
+    "cuped_estimate_sd_across_sims": 0.0019829289924797873,
+    "mean_raw_se": 0.0020342759838648506,
+    "mean_cuped_se": 0.00202362839403319,
+    "mean_raw_estimate": -0.0002510921899179615,
+    "mean_cuped_estimate": -0.00022263115956158561
+  },
+  "ab_designed_effect": {
+    "simulations": 200,
+    "final_look_z_test": {
+      "rate": 1.0,
+      "count": 200,
+      "n": 200,
+      "approx_95_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "naive_peeking_14_daily_looks": {
+      "rate": 1.0,
+      "count": 200,
+      "n": 200,
+      "approx_95_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "always_valid_msprt": {
+      "rate": 0.995,
+      "count": 199,
+      "n": 200,
+      "approx_95_ci": [
+        0.9852245307018026,
+        1.0
+      ]
+    },
+    "cuped_test": {
+      "rate": 1.0,
+      "count": 200,
+      "n": 200,
+      "approx_95_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "raw_estimate_sd_across_sims": 0.002081971881416348,
+    "cuped_estimate_sd_across_sims": 0.0020564315293523515,
+    "mean_raw_se": 0.0020863992340573343,
+    "mean_cuped_se": 0.0020751012185439583,
+    "mean_raw_estimate": 0.011203329574818182,
+    "mean_cuped_estimate": 0.011230624837598862
+  },
+  "ab_40pct_effect": {
+    "simulations": 200,
+    "final_look_z_test": {
+      "rate": 0.535,
+      "count": 107,
+      "n": 200,
+      "approx_95_ci": [
+        0.4658735202690026,
+        0.6041264797309974
+      ]
+    },
+    "naive_peeking_14_daily_looks": {
+      "rate": 0.72,
+      "count": 144,
+      "n": 200,
+      "approx_95_ci": [
+        0.6577719291637608,
+        0.7822280708362391
+      ]
+    },
+    "always_valid_msprt": {
+      "rate": 0.27,
+      "count": 54,
+      "n": 200,
+      "approx_95_ci": [
+        0.20847035836281835,
+        0.3315296416371817
+      ]
+    },
+    "cuped_test": {
+      "rate": 0.54,
+      "count": 108,
+      "n": 200,
+      "approx_95_ci": [
+        0.4709256400681121,
+        0.609074359931888
+      ]
+    },
+    "raw_estimate_sd_across_sims": 0.0020281171153594454,
+    "cuped_estimate_sd_across_sims": 0.0020051341608915787,
+    "mean_raw_se": 0.002054995249501659,
+    "mean_cuped_se": 0.0020440941434098914,
+    "mean_raw_estimate": 0.004227817847659545,
+    "mean_cuped_estimate": 0.004256350011577682
+  },
+  "seeds": [
+    1000,
+    1199
+  ],
+  "alpha": 0.05,
+  "msprt_tau": 0.01,
+  "runtime_seconds": 652.5,
+  "hardware": {
+    "machine": "x86_64",
+    "python": "3.12.15"
+  }
+}

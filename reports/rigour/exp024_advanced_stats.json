@@ -1,0 +1,732 @@
+{
+  "users": 84746,
+  "days": 14,
+  "power_plan": {
+    "baseline_rate": 0.09860917613166781,
+    "table": [
+      {
+        "mde_relative": 0.02,
+        "required_per_variant": 361917,
+        "days_at_observed_traffic": 119.6
+      },
+      {
+        "mde_relative": 0.05,
+        "required_per_variant": 58664,
+        "days_at_observed_traffic": 19.4
+      },
+      {
+        "mde_relative": 0.1,
+        "required_per_variant": 14977,
+        "days_at_observed_traffic": 5.0
+      },
+      {
+        "mde_relative": 0.15,
+        "required_per_variant": 6792,
+        "days_at_observed_traffic": 2.2
+      }
+    ],
+    "mde_at_observed_n": {
+      "baseline_rate": 0.09860917613166781,
+      "n_per_variant": 42349,
+      "alpha": 0.05,
+      "power": 0.8,
+      "mde_absolute": 0.00574000785602503,
+      "mde_relative": 0.058209672580173365
+    }
+  },
+  "srm": {
+    "overall": {
+      "control_units": 42349,
+      "treatment_units": 42397,
+      "expected_ratio": 0.5,
+      "observed_ratio": 0.5002831992070422,
+      "chi_square": 0.027187123876053147,
+      "p_value": 0.8690343542986636,
+      "mismatch_detected": false
+    },
+    "daily": [
+      {
+        "day": 0,
+        "A": 2833,
+        "B": 2943,
+        "p_value": 0.14779376533812144,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 1,
+        "A": 2814,
+        "B": 2834,
+        "p_value": 0.7901443683110281,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 2,
+        "A": 3392,
+        "B": 3431,
+        "p_value": 0.6368221098605171,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 3,
+        "A": 3489,
+        "B": 3604,
+        "p_value": 0.17210468706333576,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 4,
+        "A": 3326,
+        "B": 3270,
+        "p_value": 0.490495256937148,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 5,
+        "A": 3121,
+        "B": 3123,
+        "p_value": 0.9798073999834712,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 6,
+        "A": 3019,
+        "B": 2916,
+        "p_value": 0.1812272033095743,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 7,
+        "A": 2818,
+        "B": 2833,
+        "p_value": 0.841840846566758,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 8,
+        "A": 2534,
+        "B": 2598,
+        "p_value": 0.37165324199817706,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 9,
+        "A": 3226,
+        "B": 3195,
+        "p_value": 0.6988555477913014,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 10,
+        "A": 3249,
+        "B": 3200,
+        "p_value": 0.5417500932988837,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 11,
+        "A": 3007,
+        "B": 3025,
+        "p_value": 0.8167230352862402,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 12,
+        "A": 2816,
+        "B": 2776,
+        "p_value": 0.5927157614889442,
+        "p_holm": 1.0,
+        "flag": false
+      },
+      {
+        "day": 13,
+        "A": 2705,
+        "B": 2649,
+        "p_value": 0.4440749529338035,
+        "p_holm": 1.0,
+        "flag": false
+      }
+    ],
+    "any_day_flagged": false
+  },
+  "cuped_conversion": {
+    "unadjusted": {
+      "estimate": 0.010101345839226353,
+      "se": 0.00209388280669702,
+      "ci_low": 0.005997410950252549,
+      "ci_high": 0.014205280728200157,
+      "p_value": 1.4055405577685968e-06
+    },
+    "adjusted": {
+      "estimate": 0.009987758332889202,
+      "se": 0.0020821106388614116,
+      "ci_low": 0.005906896468893152,
+      "ci_high": 0.014068620196885252,
+      "p_value": 1.6110840286057175e-06
+    },
+    "variance_reduction": 0.01121629895867482,
+    "ci_width_ratio": 0.9943778286932026,
+    "equivalent_sample_size_gain": 0.011339884914296938
+  },
+  "cuped_revenue": {
+    "unadjusted": {
+      "estimate": 13.123591334020617,
+      "se": 4.293205885672349,
+      "ci_low": 4.709062419887427,
+      "ci_high": 21.538120248153806,
+      "p_value": 0.002236927029961391
+    },
+    "adjusted": {
+      "estimate": 12.64166288839337,
+      "se": 4.2727887359958485,
+      "ci_low": 4.267150852293085,
+      "ci_high": 21.016174924493654,
+      "p_value": 0.003089953371835044
+    },
+    "variance_reduction": 0.009495990302285873,
+    "ci_width_ratio": 0.9952443115424213,
+    "equivalent_sample_size_gain": 0.009579659434992616
+  },
+  "bootstrap": {
+    "converted": {
+      "control_mean": 0.09860917613166781,
+      "treatment_mean": 0.10871052197089416,
+      "absolute_diff": 0.010101345839226353,
+      "absolute_ci": [
+        0.005876999086601005,
+        0.014395038758399505
+      ],
+      "relative_lift": 0.10243819323405101,
+      "relative_ci": [
+        0.05841314760662838,
+        0.14867242700099145
+      ],
+      "n_boot": 2000
+    },
+    "revenue": {
+      "control_mean": 126.93287940683369,
+      "treatment_mean": 140.0564707408543,
+      "absolute_diff": 13.123591334020617,
+      "absolute_ci": [
+        4.595648421959117,
+        21.91885903909391
+      ],
+      "relative_lift": 0.1033900073436298,
+      "relative_ci": [
+        0.0348214326694037,
+        0.17915003975929109
+      ],
+      "n_boot": 2000
+    }
+  },
+  "multiple_testing": {
+    "tests": 40,
+    "significant_unadjusted": 13,
+    "significant_holm": 3,
+    "significant_bh": 7,
+    "segments": [
+      {
+        "segment": "device=desktop",
+        "users": 26382,
+        "control_rate": 0.10937141984266402,
+        "treatment_rate": 0.12122808337722929,
+        "absolute_uplift": 0.01185666353456527,
+        "p_value": 0.0025755224897081415,
+        "p_holm": 0.0927188096294931,
+        "p_bh": 0.02060417991766513
+      },
+      {
+        "segment": "device=mobile",
+        "users": 53350,
+        "control_rate": 0.09392120075046904,
+        "treatment_rate": 0.10172284644194757,
+        "absolute_uplift": 0.007801645691478523,
+        "p_value": 0.002422523407535682,
+        "p_holm": 0.08963336607882023,
+        "p_bh": 0.02060417991766513
+      },
+      {
+        "segment": "device=tablet",
+        "users": 5014,
+        "control_rate": 0.09247889485801995,
+        "treatment_rate": 0.11710963455149502,
+        "absolute_uplift": 0.024630739693475068,
+        "p_value": 0.0043613041409104915,
+        "p_holm": 0.1526456449318672,
+        "p_bh": 0.02907536093940328
+      },
+      {
+        "segment": "traffic_source=direct",
+        "users": 17721,
+        "control_rate": 0.12413948764247827,
+        "treatment_rate": 0.1309255079006772,
+        "absolute_uplift": 0.006786020258198924,
+        "p_value": 0.1757106964075802,
+        "p_holm": 1.0,
+        "p_bh": 0.3346870407763432
+      },
+      {
+        "segment": "traffic_source=email",
+        "users": 7626,
+        "control_rate": 0.10874200426439233,
+        "treatment_rate": 0.13448631905007744,
+        "absolute_uplift": 0.025744314785685105,
+        "p_value": 0.0005896851613698468,
+        "p_holm": 0.022997721293424023,
+        "p_bh": 0.011793703227396935
+      },
+      {
+        "segment": "traffic_source=organic_search",
+        "users": 28884,
+        "control_rate": 0.09697680839315295,
+        "treatment_rate": 0.10516810225062517,
+        "absolute_uplift": 0.00819129385747222,
+        "p_value": 0.020922592085192208,
+        "p_holm": 0.6904455388113429,
+        "p_bh": 0.08382191091956603
+      },
+      {
+        "segment": "traffic_source=paid_search",
+        "users": 15978,
+        "control_rate": 0.08736894658012981,
+        "treatment_rate": 0.0901330655284961,
+        "absolute_uplift": 0.002764118948366298,
+        "p_value": 0.5390084677929285,
+        "p_holm": 1.0,
+        "p_bh": 0.6341276091681513
+      },
+      {
+        "segment": "traffic_source=paid_social",
+        "users": 9433,
+        "control_rate": 0.07466208968032612,
+        "treatment_rate": 0.08717518860016764,
+        "absolute_uplift": 0.012513098919841523,
+        "p_value": 0.025937622167674746,
+        "p_holm": 0.7680203101804334,
+        "p_bh": 0.08382191091956603
+      },
+      {
+        "segment": "traffic_source=referral",
+        "users": 5104,
+        "control_rate": 0.08349514563106795,
+        "treatment_rate": 0.11071569790431,
+        "absolute_uplift": 0.02722055227324205,
+        "p_value": 0.0010178002572582394,
+        "p_holm": 0.038676409775813096,
+        "p_bh": 0.013570670096776526
+      },
+      {
+        "segment": "room_type=Entire home/apt",
+        "users": 54731,
+        "control_rate": 0.0884535253481487,
+        "treatment_rate": 0.09904281747771446,
+        "absolute_uplift": 0.010589292129565761,
+        "p_value": 2.141797416605687e-05,
+        "p_holm": 0.0008567189666422747,
+        "p_bh": 0.0008567189666422747
+      },
+      {
+        "segment": "room_type=Private room",
+        "users": 29468,
+        "control_rate": 0.11829931972789115,
+        "treatment_rate": 0.12682827735644636,
+        "absolute_uplift": 0.008528957628555212,
+        "p_value": 0.025600677006014445,
+        "p_holm": 0.7680203101804334,
+        "p_bh": 0.08382191091956603
+      },
+      {
+        "segment": "neighbourhood=Barnet",
+        "users": 1790,
+        "control_rate": 0.10825892857142858,
+        "treatment_rate": 0.09843400447427293,
+        "absolute_uplift": -0.009824924097155643,
+        "p_value": 0.49477139436473416,
+        "p_holm": 1.0,
+        "p_bh": 0.5997229022602839
+      },
+      {
+        "segment": "neighbourhood=Brent",
+        "users": 2985,
+        "control_rate": 0.1130204890945142,
+        "treatment_rate": 0.10190217391304347,
+        "absolute_uplift": -0.011118315181470731,
+        "p_value": 0.3269314952025224,
+        "p_holm": 1.0,
+        "p_bh": 0.5004985432968586
+      },
+      {
+        "segment": "neighbourhood=Bromley",
+        "users": 618,
+        "control_rate": 0.08970099667774087,
+        "treatment_rate": 0.08832807570977919,
+        "absolute_uplift": -0.0013729209679616827,
+        "p_value": 0.9522253604648475,
+        "p_holm": 1.0,
+        "p_bh": 0.9522253604648475
+      },
+      {
+        "segment": "neighbourhood=Camden",
+        "users": 8262,
+        "control_rate": 0.09568204121687929,
+        "treatment_rate": 0.10535117056856187,
+        "absolute_uplift": 0.009669129351682584,
+        "p_value": 0.14404100910625942,
+        "p_holm": 1.0,
+        "p_bh": 0.28808201821251883
+      },
+      {
+        "segment": "neighbourhood=City of London",
+        "users": 831,
+        "control_rate": 0.0815347721822542,
+        "treatment_rate": 0.11835748792270531,
+        "absolute_uplift": 0.03682271574045111,
+        "p_value": 0.07671260290899623,
+        "p_holm": 1.0,
+        "p_bh": 0.1777182467631153
+      },
+      {
+        "segment": "neighbourhood=Croydon",
+        "users": 1145,
+        "control_rate": 0.10185185185185185,
+        "treatment_rate": 0.10743801652892562,
+        "absolute_uplift": 0.005586164677073777,
+        "p_value": 0.7580349620472908,
+        "p_holm": 1.0,
+        "p_bh": 0.7979315389971483
+      },
+      {
+        "segment": "neighbourhood=Ealing",
+        "users": 1767,
+        "control_rate": 0.09954233409610984,
+        "treatment_rate": 0.13325867861142218,
+        "absolute_uplift": 0.033716344515312344,
+        "p_value": 0.027242121048858963,
+        "p_holm": 0.7680203101804334,
+        "p_bh": 0.08382191091956603
+      },
+      {
+        "segment": "neighbourhood=Enfield",
+        "users": 805,
+        "control_rate": 0.07317073170731707,
+        "treatment_rate": 0.11139240506329114,
+        "absolute_uplift": 0.03822167335597407,
+        "p_value": 0.060601477021166875,
+        "p_holm": 1.0,
+        "p_bh": 0.16160393872311166
+      },
+      {
+        "segment": "neighbourhood=Greenwich",
+        "users": 1504,
+        "control_rate": 0.09424083769633508,
+        "treatment_rate": 0.11486486486486487,
+        "absolute_uplift": 0.02062402716852979,
+        "p_value": 0.19095650742952053,
+        "p_holm": 1.0,
+        "p_bh": 0.34719364987185547
+      },
+      {
+        "segment": "neighbourhood=Hackney",
+        "users": 3685,
+        "control_rate": 0.09961046188091263,
+        "treatment_rate": 0.1149364406779661,
+        "absolute_uplift": 0.015325978797053469,
+        "p_value": 0.13321097706074447,
+        "p_holm": 1.0,
+        "p_bh": 0.2804441622331463
+      },
+      {
+        "segment": "neighbourhood=Hammersmith and Fulham",
+        "users": 3476,
+        "control_rate": 0.11420454545454546,
+        "treatment_rate": 0.11072261072261072,
+        "absolute_uplift": -0.003481934731934741,
+        "p_value": 0.7453078185055779,
+        "p_holm": 1.0,
+        "p_bh": 0.7979315389971483
+      },
+      {
+        "segment": "neighbourhood=Haringey",
+        "users": 1994,
+        "control_rate": 0.09108910891089109,
+        "treatment_rate": 0.12296747967479675,
+        "absolute_uplift": 0.031878370763905664,
+        "p_value": 0.021218863410011432,
+        "p_holm": 0.6904455388113429,
+        "p_bh": 0.08382191091956603
+      },
+      {
+        "segment": "neighbourhood=Harrow",
+        "users": 625,
+        "control_rate": 0.10903426791277258,
+        "treatment_rate": 0.08881578947368421,
+        "absolute_uplift": -0.020218478439088375,
+        "p_value": 0.39803366963440645,
+        "p_holm": 1.0,
+        "p_bh": 0.5351036621633134
+      },
+      {
+        "segment": "neighbourhood=Hillingdon",
+        "users": 902,
+        "control_rate": 0.07276995305164319,
+        "treatment_rate": 0.12605042016806722,
+        "absolute_uplift": 0.053280467116424035,
+        "p_value": 0.00799081709063244,
+        "p_holm": 0.27168778108150293,
+        "p_bh": 0.045661811946471086
+      },
+      {
+        "segment": "neighbourhood=Hounslow",
+        "users": 1162,
+        "control_rate": 0.11051693404634581,
+        "treatment_rate": 0.1264559068219634,
+        "absolute_uplift": 0.01593897277561758,
+        "p_value": 0.40132774662248505,
+        "p_holm": 1.0,
+        "p_bh": 0.5351036621633134
+      },
+      {
+        "segment": "neighbourhood=Islington",
+        "users": 4312,
+        "control_rate": 0.10422535211267606,
+        "treatment_rate": 0.09945004582951421,
+        "absolute_uplift": -0.004775306283161848,
+        "p_value": 0.6041485874937134,
+        "p_holm": 1.0,
+        "p_bh": 0.6904555285642439
+      },
+      {
+        "segment": "neighbourhood=Kensington and Chelsea",
+        "users": 7119,
+        "control_rate": 0.09706293706293706,
+        "treatment_rate": 0.10468397291196388,
+        "absolute_uplift": 0.007621035849026819,
+        "p_value": 0.2856858080124153,
+        "p_holm": 1.0,
+        "p_bh": 0.49179307128185157
+      },
+      {
+        "segment": "neighbourhood=Kingston upon Thames",
+        "users": 527,
+        "control_rate": 0.0842911877394636,
+        "treatment_rate": 0.09022556390977443,
+        "absolute_uplift": 0.005934376170310826,
+        "p_value": 0.8093085403728917,
+        "p_holm": 1.0,
+        "p_bh": 0.8300600414080941
+      },
+      {
+        "segment": "neighbourhood=Lambeth",
+        "users": 4424,
+        "control_rate": 0.09968282736746716,
+        "treatment_rate": 0.10825439783491204,
+        "absolute_uplift": 0.008571570467444889,
+        "p_value": 0.35034898030780104,
+        "p_holm": 1.0,
+        "p_bh": 0.5004985432968586
+      },
+      {
+        "segment": "neighbourhood=Lewisham",
+        "users": 1465,
+        "control_rate": 0.09055627425614489,
+        "treatment_rate": 0.11849710982658959,
+        "absolute_uplift": 0.027940835570444703,
+        "p_value": 0.07997321104340188,
+        "p_holm": 1.0,
+        "p_bh": 0.1777182467631153
+      },
+      {
+        "segment": "neighbourhood=Merton",
+        "users": 784,
+        "control_rate": 0.12239583333333333,
+        "treatment_rate": 0.105,
+        "absolute_uplift": -0.017395833333333333,
+        "p_value": 0.4427495401072804,
+        "p_holm": 1.0,
+        "p_bh": 0.5712897291706843
+      },
+      {
+        "segment": "neighbourhood=Newham",
+        "users": 2167,
+        "control_rate": 0.10694183864915573,
+        "treatment_rate": 0.11989100817438691,
+        "absolute_uplift": 0.012949169525231188,
+        "p_value": 0.3421247093225017,
+        "p_holm": 1.0,
+        "p_bh": 0.5004985432968586
+      },
+      {
+        "segment": "neighbourhood=Redbridge",
+        "users": 755,
+        "control_rate": 0.11597938144329897,
+        "treatment_rate": 0.09264305177111716,
+        "absolute_uplift": -0.023336329672181813,
+        "p_value": 0.2950758427691109,
+        "p_holm": 1.0,
+        "p_bh": 0.49179307128185157
+      },
+      {
+        "segment": "neighbourhood=Richmond upon Thames",
+        "users": 986,
+        "control_rate": 0.1111111111111111,
+        "treatment_rate": 0.12573673870333987,
+        "absolute_uplift": 0.014625627592228768,
+        "p_value": 0.47789685668824544,
+        "p_holm": 1.0,
+        "p_bh": 0.5973710708603067
+      },
+      {
+        "segment": "neighbourhood=Southwark",
+        "users": 4748,
+        "control_rate": 0.09236609025727541,
+        "treatment_rate": 0.10938157341186369,
+        "absolute_uplift": 0.017015483154588285,
+        "p_value": 0.05159752302563862,
+        "p_holm": 1.0,
+        "p_bh": 0.1474214943589675
+      },
+      {
+        "segment": "neighbourhood=Tower Hamlets",
+        "users": 6194,
+        "control_rate": 0.08442596738087624,
+        "treatment_rate": 0.10140202151940006,
+        "absolute_uplift": 0.01697605413852382,
+        "p_value": 0.021342818593864173,
+        "p_holm": 0.6904455388113429,
+        "p_bh": 0.08382191091956603
+      },
+      {
+        "segment": "neighbourhood=Waltham Forest",
+        "users": 1202,
+        "control_rate": 0.10869565217391304,
+        "treatment_rate": 0.10099337748344371,
+        "absolute_uplift": -0.0077022746904693296,
+        "p_value": 0.6629369425431936,
+        "p_holm": 1.0,
+        "p_bh": 0.7365966028257707
+      },
+      {
+        "segment": "neighbourhood=Wandsworth",
+        "users": 3068,
+        "control_rate": 0.10550458715596331,
+        "treatment_rate": 0.11673151750972763,
+        "absolute_uplift": 0.01122693035376432,
+        "p_value": 0.3225605144936943,
+        "p_holm": 1.0,
+        "p_bh": 0.5004985432968586
+      },
+      {
+        "segment": "neighbourhood=Westminster",
+        "users": 13973,
+        "control_rate": 0.09793376733654119,
+        "treatment_rate": 0.10713768640509629,
+        "absolute_uplift": 0.009203919068555097,
+        "p_value": 0.0728862871783765,
+        "p_holm": 1.0,
+        "p_bh": 0.1777182467631153
+      }
+    ]
+  },
+  "sequential": {
+    "tau": 0.01,
+    "looks": [
+      {
+        "day": 0,
+        "users": 5776,
+        "naive_p": 0.34235174150538605,
+        "always_valid_p": 1.0
+      },
+      {
+        "day": 1,
+        "users": 11424,
+        "naive_p": 0.1225436278733053,
+        "always_valid_p": 0.810959590192942
+      },
+      {
+        "day": 2,
+        "users": 18247,
+        "naive_p": 0.023424655953505787,
+        "always_valid_p": 0.2861519329587767
+      },
+      {
+        "day": 3,
+        "users": 25340,
+        "naive_p": 0.002229947014405612,
+        "always_valid_p": 0.04760129532827157
+      },
+      {
+        "day": 4,
+        "users": 31936,
+        "naive_p": 0.0016509953941355607,
+        "always_valid_p": 0.03667444559659221
+      },
+      {
+        "day": 5,
+        "users": 38180,
+        "naive_p": 0.0013611849665083233,
+        "always_valid_p": 0.031175321193040888
+      },
+      {
+        "day": 6,
+        "users": 44115,
+        "naive_p": 0.00011113675046192505,
+        "always_valid_p": 0.0036643833038823843
+      },
+      {
+        "day": 7,
+        "users": 49766,
+        "naive_p": 0.0001035785611040309,
+        "always_valid_p": 0.003413894974513458
+      },
+      {
+        "day": 8,
+        "users": 54898,
+        "naive_p": 6.933813240282633e-06,
+        "always_valid_p": 0.00030801169491140594
+      },
+      {
+        "day": 9,
+        "users": 61319,
+        "naive_p": 1.9735316019822423e-06,
+        "always_valid_p": 9.757682896078398e-05
+      },
+      {
+        "day": 10,
+        "users": 67768,
+        "naive_p": 1.7871623797835313e-06,
+        "always_valid_p": 8.80516906318477e-05
+      },
+      {
+        "day": 11,
+        "users": 73800,
+        "naive_p": 6.205732356568805e-07,
+        "always_valid_p": 3.318269347751742e-05
+      },
+      {
+        "day": 12,
+        "users": 79392,
+        "naive_p": 2.3346449037559792e-07,
+        "always_valid_p": 1.3394475614120086e-05
+      },
+      {
+        "day": 13,
+        "users": 84746,
+        "naive_p": 1.4106481012918964e-06,
+        "always_valid_p": 1.3394475614120086e-05
+      }
+    ],
+    "first_day_naive_significant": 2,
+    "first_day_always_valid_significant": 3
+  }
+}
