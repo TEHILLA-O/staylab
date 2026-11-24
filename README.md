@@ -115,7 +115,7 @@ The annualised revenue line is a projection from the simulated revenue per visit
 ## Tests
 
 ```bash
-pytest -m "not integration"     # 42 tests, no database needed
+pytest -m "not integration"     # 49 tests, no database needed (7 added for the rigour checks on 24 November 2026)
 pytest -m integration           # 4 tests, needs a loaded database
 ruff check analytics api tests
 ```
